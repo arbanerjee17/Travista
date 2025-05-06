@@ -57,9 +57,9 @@ Feel free to fork the repo and submit pull requests. For major changes, please o
 📬 Contact
 For any questions or suggestions:
 
-Email: satyamdey4651@gmail.com
+Email: arbanerjee777@gmail.com
 
-Portfolio: https://v0-portfolio-redesign-teal.vercel.app/
+Portfolio: 
 
 ⭐ Show Your Support
 If you like this project, give it a ⭐ on GitHub and share it with others!
