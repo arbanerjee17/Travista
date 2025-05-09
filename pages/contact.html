@@ -4,8 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap">
 </head>
+  <style>
+    body {
+      font-family: "Comfortaa", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('contact_bg.jpg'); /* path to your image */
+      background-size: cover;        /* ensures image covers entire background */
+      background-repeat: no-repeat;  /* prevents tiling */
+      background-attachment: fixed;  /* makes it stay fixed while scrolling */
+      background-position: center;   /* centers the image */
+        
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #000000;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .contact-box, .form-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 1 1 45%;
+    }
+
+    .contact-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact-box li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .form-box h2 {
+      margin-bottom: 20px;
+      color: #000000;
+    }
+
+    .form-box form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-box label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-box input, .form-box textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .form-box button {
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-box button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .contact-box, .form-box {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
 <body>
-    
+  <div class="container">
+    <h1>CONTACT US</h1>
+    <div class="contact-wrapper">
+      <div class="contact-box">
+        <ul>
+          <li><strong>Administrator:</strong> Aparup Banerjee</li>
+          <li><strong>Phone:</strong> +91 9907806646</li>
+          <li><strong>Email:</strong> arbanerjee777@gmail.com</li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aparup-banerjee-4aa69727b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin-aparup.banerjee</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/arbanerjee17" target="_blank">github-aparup.banerje</a></li>
+          <li><strong>Address:</strong> Raniganj, West Bengal</li>
+        </ul>
+      </div>
+
+      <div class="form-box">
+        <h2>Submit Your Queries</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="query">Your Query</label>
+          <textarea id="query" name="query" rows="5" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
