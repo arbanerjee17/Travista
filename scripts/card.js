@@ -1,4 +1,4 @@
-fetch("../utils/bengal_travista.json")
+fetch("./utils/bengal_travista.json")
   .then((response) => response.json())
   .then((data) => {
     const container = document.getElementById("card-sections");

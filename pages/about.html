@@ -7,12 +7,16 @@
     <title>Travista-About Us</title>
     <style>
         body {
-            background-color: white;
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 20px;
             padding: 20px;
             padding-top: 70px;
+            background-image: url('about_back.jpg'); /* path to your image */
+            background-size: cover;        /* ensures image covers entire background */
+            background-repeat: no-repeat;  /* prevents tiling */
+            background-attachment: fixed;  /* makes it stay fixed while scrolling */
+            background-position: center;   /* centers the image */
         }
 
         nav {
@@ -97,11 +101,6 @@
                             More
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Destination</a></li>
-                            <li><a class="dropdown-item" href="help.html">Help</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
                             <li><a class="dropdown-item" href="support.html">Support</a></li>
                             <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
                         </ul>
